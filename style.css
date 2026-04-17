@@ -1,0 +1,33 @@
+/* Esto obliga a Streamlit a cambiar el fondo del cuerpo */
+[data-testid="stAppViewContainer"] {
+    background-color: #0d1117 !important;
+}
+
+/* Esto cambia el color del texto general */
+.stMarkdown, p, h1, h2, h3 {
+    color: rgb(15, 15, 15) !important;
+}
+
+/* Tu logo y degradado con esteroides para que funcionen */
+.logo span { 
+    color: #e01a5c !important; 
+    font-weight: bold !important; 
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #f5f5f5, #550abe) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    display: block !important;
+}
+
+/* Estilo para las tarjetas de materias */
+.card {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin: 10px !important;
+}
