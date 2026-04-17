@@ -12,7 +12,7 @@ from io import BytesIO
 from datetime import datetime, timedelta
 from streamlit_mic_recorder import mic_recorder
 from streamlit_mic_recorder import mic_recorder
-from streamlit_gsheets import GSheetsConnection # <--- AGREGA ESTA LÍNEA
+#from streamlit_gsheets import GSheetsConnection # <--- AGREGA ESTA LÍNEA
 # Esto crea una memoria compartida para todos los que entren a la web
 if "examenes_globales" not in st.session_state:
     @st.cache_resource
@@ -186,7 +186,7 @@ def main():
 
                             # --- NUEVO: ENVÍO A GOOGLE SHEETS ---
                     try:
-                                conn = st.connection("gsheets", type=GSheetsConnection)
+                                #conn = st.connection("gsheets", type=GSheetsConnection)
                                 df_existente = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Xl6vTuBSLHqWpHlOM4gWiEDFVRo8B6ttEtUEC2jzSOw/edit?usp=sharing")
                                 # Leemos datos actuales para anexar
                                 df_existente = conn.read()
